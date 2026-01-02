@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Otomotif TV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: radial-gradient(circle at top, #1a0000, #000);
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .hero {
+            min-height: 90vh;
+            background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .95)),
+                url("https://images.unsplash.com/photo-1502877338535-766e1452684a") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            letter-spacing: 4px;
+        }
+
+        .hero span {
+            color: #ff1e1e;
+        }
+
+        .dars-logo {
+            max-width: 320px;
+            width: 100%;
+            filter: drop-shadow(0 0 15px rgba(255, 140, 0, .8));
+            transition: .4s;
+        }
+
+        .dars-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .channel-card {
+            background: #0f0f0f;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 40px rgba(255, 0, 0, .3);
+        }
+
+        .yt-badge {
+            background: #ff0000;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .channel-photo {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 0 35px rgba(255, 0, 0, .5);
+            margin: 25px auto;
+            transition: .4s;
+        }
+
+        .channel-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card {
+            background: #111;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: .4s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(255, 0, 0, .4);
+        }
+
+        .gallery img {
+            border-radius: 15px;
+            transition: .4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 25px rgba(255, 0, 0, .4);
+        }
+
+        .digital-clock {
+            position: fixed;
+            top: 90px;
+            right: 20px;
+            background: linear-gradient(135deg, #140000, #000);
+            padding: 12px 20px;
+            border-radius: 14px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #ff1e1e;
+            box-shadow: 0 0 25px rgba(255, 0, 0, .6);
+            z-index: 999;
+            text-align: center;
+        }
+
+        .digital-clock span {
+            font-size: 12px;
+            display: block;
+            color: #aaa;
+            letter-spacing: 1px;
+        }
+
+
+        footer {
+            background: #000;
+            padding: 25px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">OTOMOTIF<span class="text-danger">X</span></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Gallery Otomotif TV.html">Gallery Otomotiv tv</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- JAM DIGITAL -->
+    <div class="digital-clock" id="clock">
+        00:00:00
+        <span>Waktu Indonesia</span>
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Gallery <span>Otomotif TV</span></h1>
+            <img src="Gambar Otomotif/logo darsvlog terbaru.png" alt="DARSVLOG" class="my-3 dars-logo">
+            <p class="lead mt-3">YouTube Otomotif Indonesia</p>
+            <p class="text-secondary">Channel: Dedi Ananta Ramadhan</p>
+        </div>
+    </section>
+
+    <!-- CHANNEL INFO -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="channel-card text-center">
+                    <span class="yt-badge">YouTube Creator</span>
+                    <h2>Dedi Ananta Ramadhan</h2>
+                    <p class="text-secondary mt-2" style="font-size:15px; line-height:1.7;">
+                        Membahas tentang otomotif mobil khususnya <strong>"Modifikasi"</strong> dari sisi kacamata
+                        <strong>"Pemula"</strong> dengan cara yang santai & jujur seadanya.
+                    </p>
+
+                    <!-- FOTO CHANNEL -->
+                    <img src="Gambar Otomotif/gambar darsvlog.jpeg" alt="DARS VLOG - Dedi Ananta Ramadhan"
+                        class="channel-photo">
+
+                    <h5 class="mt-4 text-uppercase" style="letter-spacing:2px; color:#ff1e1e;">
+                        🎬 Video Unggulan
+                    </h5>
+
+                    <p class="text-secondary mb-3">
+                        Video unggulan yang menampilkan konten otomotif pilihan dari channel
+                        <strong>Dedi Ananta Ramadhan</strong>, mencakup ulasan kendaraan,
+                        modifikasi, serta informasi seputar dunia otomotif <strong>Dengan Gofar Hilman</strong>.
+                    </p>
+
+                    <!-- VIDEO UTAMA -->
+                    <a href="https://youtu.be/37gyWtCp-_0" target="_blank">
+                        <img src="https://img.youtube.com/vi/37gyWtCp-_0/hqdefault.jpg" alt="Tonton Video di YouTube"
+                            class="channel-photo">
+                    </a>
+
+                    <p class="text-secondary mt-2">
+                        ▶️ Klik gambar untuk menonton langsung di YouTube
+                    </p>
+
+                    <a href="https://www.youtube.com/c/DediAnantaRamadhan" target="_blank"
+                        class="btn btn-danger btn-lg mt-4">
+                        🔴 Subscribe Channel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO PILIHAN -->
+    <section class="container my-5">
+        <h3 class="text-center mb-4">🔥 Video Otomotif</h3>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- VIDEO 1 -->
+            <div class="col-md-4">
+                <div class="video-card text-center p-3">
+                    <a href="https://youtu.be/FXvlPyn3gF8" target="_blank">
+                        <img src="https://img.youtube.com/vi/FXvlPyn3gF8/hqdefault.jpg"
+                            alt="Video Otomotif Dedi Ananta Ramadhan" class="img-fluid rounded">
+                    </a>
+                    <p class="text-secondary mt-2 mb-0">
+                        ▶️ Tonton di YouTube
+                    </p>
+                </div>
+            </div>
+
+            <!-- VIDEO 2 -->
+            <div class="col-md-4">
+                <div class="video-card text-center p-3">
+                    <a href="https://youtu.be/lIBZu12a2hg" target="_blank">
+                        <img src="https://img.youtube.com/vi/lIBZu12a2hg/hqdefault.jpg"
+                            alt="Video Otomotif Dedi Ananta Ramadhan" class="img-fluid rounded">
+                    </a>
+                    <p class="text-secondary mt-2 mb-0">
+                        ▶️ Tonton di YouTube
+                    </p>
+                </div>
+            </div>
+
+            <!-- VIDEO 3 -->
+            <div class="col-md-4">
+                <div class="video-card text-center p-3">
+                    <a href="https://youtu.be/0vrsAkam_p0" target="_blank">
+                        <img src="https://img.youtube.com/vi/0vrsAkam_p0/hqdefault.jpg"
+                            alt="Video Otomotif Dedi Ananta Ramadhan" class="img-fluid rounded">
+                    </a>
+                    <p class="text-secondary mt-2 mb-0">
+                        ▶️ Tonton di YouTube
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 OTOMOTIF TV</p>
+        <p class="text-secondary">Nada Ananta Ramadhan_251011701139_01SIFP015</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const jam = String(now.getHours()).padStart(2, '0');
+            const menit = String(now.getMinutes()).padStart(2, '0');
+            const detik = String(now.getSeconds()).padStart(2, '0');
+
+            document.getElementById("clock").innerHTML =
+                jam + ":" + menit + ":" + detik +
+                "<span>Waktu Indonesia</span>";
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+
+</body>
+
+</html>
